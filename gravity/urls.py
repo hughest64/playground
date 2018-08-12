@@ -4,5 +4,6 @@ from . import views
 app_name = 'gravity'
 
 urlpatterns = [
-    path('', views.gravity, name='gravity')
+    path('recipes/', views.recipe_list, name='recipe_list'),
+    path('', views.gravity, name='gravity'),
 ]
