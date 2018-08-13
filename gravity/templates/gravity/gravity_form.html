@@ -10,9 +10,9 @@
     <h1>Enter a gravity for {{ recipe.recipe_name }}</h1>
     <form action="" method="post">
         {% csrf_token %}
-        <!-- {{ form }} -->
-        <label for="gravity">Gravity</label>
-        <input type="text" name="gravity">
+        {{ form }}
+        <!-- <label for="gravity">Gravity</label>
+        <input type="text" name="gravity"> -->
         <input type="submit" value="Submit">
     </form>
 </body>
