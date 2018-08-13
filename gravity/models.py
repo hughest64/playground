@@ -7,6 +7,9 @@ class Recipe(models.Model):
     recipe_name = models.CharField(max_length=100)
     original_gravity = models.DecimalField(max_digits=4, decimal_places=3)
 
+    def __str__(self):
+        return self.recipe_name
+
 
 class SGravity(models.Model):
     """ A set of measured specific gravities for a recipe. """

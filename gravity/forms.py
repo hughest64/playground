@@ -2,5 +2,7 @@ from django import forms
 
 from .import models
 
-class AddGravityReading(forms.Form):
-    gravity_form = forms.IntegerField()
+class AddGravityReading(forms.ModelForm):
+    class Meta:
+        model = models.SGravity
+        fields = ['recipe','specific_gravity']

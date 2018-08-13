@@ -7,8 +7,13 @@
     <title>Gravity Page</title>
 </head>
 <body>
-    <h1>Welcome to the gravity page!</h1>
-    <p>Here is the passed in gravity</p>
-    <p>{{ s_gravity }}</p>
+    <h1>Enter a gravity for {{ recipe.recipe_name }}</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <!-- {{ form }} -->
+        <label for="gravity">Gravity</label>
+        <input type="text" name="gravity">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
