@@ -26,6 +26,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     # gravity app
     path('gravity/', include('gravity.urls', namespace='gravity')),
+    # account pages
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
