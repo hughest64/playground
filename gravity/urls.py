@@ -6,4 +6,5 @@ app_name = 'gravity'
 urlpatterns = [
     path('recipes/', views.recipe_list, name='recipe_list'),
     path('<recipe_pk>', views.gravity, name='gravity'),
+    path('', views.gravity_main, name='gravity_main'),
 ]
